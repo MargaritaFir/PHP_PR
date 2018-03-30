@@ -1,0 +1,16 @@
+<?php
+
+$ig = new class {
+
+	function_construct($first = 'Elias', $second ='Goss') {
+
+		$this->first =$first;
+		$this->second = $second;
+	}
+
+	function getFullName() {
+		return 'Mr. ' . this->first . ' ' . $this->second;
+	}
+};
+
+echo($ig -> getFullName()); // Mr. Elias Goss
